@@ -138,6 +138,9 @@ def chinese_remainder(a, n):
     if len(n) != len(a):
         raise Exception("The number of cosets differs from the number of moduli.")
 
+    if len(n) == 1:
+        return a[0]
+
     def crt2(a, n):
         if len(a) != 2 or len(n) != 2:
             raise Exception("The list of cosets and the list of moduli should have length 2.")
@@ -656,7 +659,7 @@ def get_S_prime(form):
 ################
 
 # Int -> Int -> Int -> List(Vec(Int, 3))
-def get_rational_point(a, b, c, strict_squarefree=False):
+def get_rational_point(a, b, c, strict_squarefree=True):
     if 0 in [a, b, c]:
         raise Exception("Parameters must be nonzero")
 
@@ -693,7 +696,7 @@ def get_rational_point(a, b, c, strict_squarefree=False):
 
     final = S * S_prime
 
-    print(final)
+    # print(final)
 
     return [reduce(x, y, z) for (x, y, z) in (list(final.col(1)), list(final.col(2)))]
 

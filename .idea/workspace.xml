@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="463d9b3e-5cc9-4ed0-bac1-01ee34acd476" name="Default Changelist" comment="" />
+    <list default="true" id="463d9b3e-5cc9-4ed0-bac1-01ee34acd476" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
+            <state relative-caret-position="357">
+              <caret line="676" column="52" lean-forward="true" selection-start-line="676" selection-start-column="52" selection-end-line="676" selection-end-column="52" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -40,10 +44,14 @@
       <find>print</find>
       <find>check_reduced_params</find>
       <find>shit</find>
+      <find>wikibooks</find>
     </findStrings>
     <replaceStrings>
       <replace>determinant</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,12 +61,13 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="15" />
     <option name="y" value="42" />
     <option name="width" value="975" />
     <option name="height" value="1023" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -79,6 +88,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -118,15 +128,15 @@
       <workItem from="1566371746926" duration="5453000" />
       <workItem from="1566850564363" duration="5670000" />
       <workItem from="1566945119051" duration="957000" />
-      <workItem from="1567225179626" duration="3654000" />
+      <workItem from="1567225179626" duration="5782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123671000" />
+    <option name="totallyTimeSpent" value="125799000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="42" width="975" height="1023" extended-state="1" />
+    <frame x="15" y="42" width="975" height="1023" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24600638" />
@@ -159,8 +169,8 @@
     <entry file="file://$PROJECT_DIR$/find_examples.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
+        <state relative-caret-position="357">
+          <caret line="676" column="52" lean-forward="true" selection-start-line="676" selection-start-column="52" selection-end-line="676" selection-end-column="52" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
