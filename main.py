@@ -52,12 +52,13 @@ def are_pairwise_coprime(l):
 # Int -> Int -> Int -> (Int, Int, Int)
 def reduce(a, b, c):
     common_factor = np.gcd.reduce([a, b, c])
-    return a / common_factor, b / common_factor, c / common_factor
+    return a // common_factor, b // common_factor, c // common_factor
 
 
 # Int -> Int -> Int -> (Int, Int, Int)
 def remove_squares(a, b, c):
-    return tuple(map(lambda n: functools.reduce(lambda x, y: x * y, [factor for factor in sp.factorint(n)]), [a, b, c]))
+    return tuple(map(lambda n: functools.reduce(lambda x, y: int(x * y), [factor for factor in sp.factorint(n)], 1),
+                     [a, b, c]))
 
 
 # Int -> Int -> Int -> Bool
@@ -70,8 +71,8 @@ def check_reduced_params(a, b, c, strict_squarefree=False):
     if strict_squarefree and not functools.reduce(lambda x, y: x and y, list(map(is_squarefree, [a, b, c]))):
         exception_string += "\n - are not squarefree."
     if exception_string != "":
-        for n in range(2, 200):
-            soln_list = [(x, y, z) for x in range(0..n) for y in range(0..n) for z in range(0..n)
+        for n in range(2, 50):
+            soln_list = [(x, y, z) for x in range(0, n) for y in range(0, n) for z in range(0, n)
                          if (a * x ** 2 + b * y ** 2 + c * z ** 2) % n == 0 if not (x == y == z == 0)]
             if not soln_list:
                 exception_string += "The given form has no solutions mod", n
@@ -84,8 +85,8 @@ def check_reduced_params(a, b, c, strict_squarefree=False):
     if not is_quadratic_residue(-a * b, c):
         exception_string += "-ab is not a quadratic residue mod c.\n"
     if exception_string != "":
-        for n in range(2, 200):
-            soln_list = [(x, y, z) for x in range(0..n) for y in range(0..n) for z in range(0..n)
+        for n in range(2, 50):
+            soln_list = [(x, y, z) for x in range(0, n) for y in range(0, n) for z in range(0, n)
                          if (a * x ** 2 + b * y ** 2 + c * z ** 2) % n == 0 if not (x == y == z == 0)]
             if not soln_list:
                 exception_string += "The given form has no solutions mod", n
@@ -659,7 +660,7 @@ def get_S_prime(form):
 ################
 
 # Int -> Int -> Int -> List(Vec(Int, 3))
-def get_rational_point(a, b, c, strict_squarefree=True):
+def get_rational_point(a, b, c, strict_squarefree=False):
     if 0 in [a, b, c]:
         raise Exception("Parameters must be nonzero")
 
@@ -701,10 +702,23 @@ def get_rational_point(a, b, c, strict_squarefree=True):
     return [reduce(x, y, z) for (x, y, z) in (list(final.col(1)), list(final.col(2)))]
 
 
-# NOT TESTED YET
 # Int -> Int -> Int -> Vec(Vec(Int, 3), 1)
-def get_rational_point_on_cubic(a, b, c):
-    return Matrix().inv() * get_rational_point(4 * a ** 2, 4 * a * c - b ** 2, -4 * a)[0]
+def get_rational_point_on_conic(a, b, c):
+    form_rational_point = get_rational_point(4 * a ** 2,
+                                             4 * a * c - b ** 2,
+                                             -4 * a,
+                                             strict_squarefree=True)[0]
+
+    if form_rational_point[0][2] != 0:
+        x_prime, y, z = form_rational_point[0]
+        x = x_prime - (b / (2 * a)) * y
+    elif form_rational_point[1][2] != 0:
+        x_prime, y, z = form_rational_point[1]
+        x = x_prime - (b / (2 * a)) * y
+    else:
+        raise Exception("Gauss' method returns z = 0.")
+
+    return x / z, y / z
 
 
 ####################
