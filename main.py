@@ -697,8 +697,6 @@ def get_rational_point(a, b, c, strict_squarefree=False):
 
     final = S * S_prime
 
-    # print(final)
-
     return [reduce(x, y, z) for (x, y, z) in (list(final.col(1)), list(final.col(2)))]
 
 

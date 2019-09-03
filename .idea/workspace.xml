@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="463d9b3e-5cc9-4ed0-bac1-01ee34acd476" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="-153">
+              <caret line="698" selection-start-line="698" selection-end-line="698" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -59,10 +60,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="15" />
     <option name="y" value="42" />
-    <option name="width" value="975" />
+    <option name="width" value="1890" />
     <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -126,15 +127,15 @@
       <workItem from="1566371746926" duration="5453000" />
       <workItem from="1566850564363" duration="5670000" />
       <workItem from="1566945119051" duration="957000" />
-      <workItem from="1567225179626" duration="11797000" />
+      <workItem from="1567225179626" duration="14899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131814000" />
+    <option name="totallyTimeSpent" value="134916000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="42" width="975" height="1023" extended-state="1" />
+    <frame x="15" y="42" width="1890" height="1023" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24600638" />
@@ -167,8 +168,8 @@
     <entry file="file://$PROJECT_DIR$/find_examples.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="-153">
+          <caret line="698" selection-start-line="698" selection-end-line="698" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
